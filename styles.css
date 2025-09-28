@@ -728,7 +728,7 @@ ul {
 
 
 
-/* MONEY TRANSFER END */
+
 
 .money-transfer {
 
@@ -754,10 +754,11 @@ ul {
     gap: 1rem;
   }
   .learn-more {
-    
+    display: flex;
     text-align: center;
-    display: block;
+    align-items: center;
     width: 10rem;
+    flex-direction:row-reverse;
   }
 
 
@@ -782,6 +783,8 @@ ul {
   
   .app-btn {
     padding-top: 2rem;
+    display: flex;
+    
 
 
     
@@ -792,7 +795,59 @@ ul {
 
 
 }
+/* MONEY TRANSFER END */
 
+
+/*TESTIMONIALS START */
+
+.testimonials {
+
+  @media (width < 1200px) {
+    display: none;
+  }
+  padding-block: var(--section-spacing);
+  
+  .container{
+    display: flex;
+  }
+
+  .testimonal-heading {
+    width: 100%;
+    
+  }
+
+  .testimonal-boxes {
+    display: flex;
+    gap: 4rem;
+    
+   
+    
+    
+
+  }
+
+  .testimonal-box-1 {
+    width: 50%;
+    box-shadow: 5px 5px 5px  rgba(123, 124, 123, 0.301);
+    
+    
+  }
+
+  .testimonal-box-2 {
+    width: 50%;
+    box-shadow: 5px 5px 5px  rgba(123, 124, 123, 0.301);
+  }
+}
+
+
+/*TESTIMONIALS END */
+
+
+
+/*FAQ START */
+
+
+/* FAQ END */
 
 
 
