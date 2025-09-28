@@ -138,11 +138,25 @@ ul {
 
 }
 
+.h2 {
+  font-size: 2rem;
+  color: var(--clr-text-heading);
+  font-weight: 800;
+
+}
+
 .h5 {
     font-size: 1.25rem;
     color: var(--clr-text-heading);
     font-weight: 800;
 }
+
+.h4{
+  font-size: 1.5rem;
+  color: var(--clr-text-heading);
+  font-weight: 800;
+}
+
 
 .d4 {
   font-size: 3.5rem;
@@ -632,6 +646,155 @@ ul {
 
 
 /* APP FEATURES END */
+
+
+
+
+
+/*  HOW DOSE IT WORK START */
+
+
+.carousel-section {
+  padding-block: var(--section-spacing);
+  background-color: var(--clr-bg-100);
+  text-align: center;
+
+  .tablet-text {
+    display: none;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .carousel{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .text {
+    max-width: 70ch;
+    margin-inline: auto;
+  }
+
+  .carousel-items:first-of-type,
+  .carousel-items:last-of-type {
+    display: none;
+
+  }
+
+  @media (width > 768px) {
+    .carousel-items:first-of-type,
+    .carousel-items:last-of-type {
+      display: block;
+    }
+
+    .mobile-text {
+      display: none;
+    }
+
+    .tablet-text{
+      display: block;
+    }
+  }
+
+  @media (width > 1200px) {
+    
+    .mobile-text {
+      display: none;
+    }
+
+    .tablet-text {
+      display: none;
+    }
+    .desktop-text {
+      display: block;
+    }
+  }
+
+}
+
+
+
+
+
+/* HOW DOSE IT WROK END */
+
+
+
+/* MONEY TRANSFER START */
+
+
+
+
+
+/* MONEY TRANSFER END */
+
+.money-transfer {
+
+  @media (width < 1200px) {
+      display: none;
+    }
+    
+  .container {
+    padding-block: var(--section-spacing);
+  }
+  .top-box {
+    display: flex;
+  }
+  .top-text {
+    display:block;
+    
+  }
+
+  .row-text {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .learn-more {
+    
+    text-align: center;
+    display: block;
+    width: 10rem;
+  }
+
+
+  .btm-box {
+    padding-block: var(--section-spacing);
+    display: flex;
+    flex-direction: row-reverse;
+    
+  }
+
+  .btm-text {
+    width: 50%;
+    ;
+  }
+  .block-text {
+    padding-top: 2rem;
+    display:flex;
+    gap: 2rem;
+
+    
+  }
+  
+  .app-btn {
+    padding-top: 2rem;
+
+
+    
+  }
+
+
+
+
+
+}
+
+
+
 
 
 
