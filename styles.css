@@ -613,6 +613,7 @@ ul {
     padding: 1rem;
     border-radius: var(--br-l);
     flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.068);
   }
 
   @media (width > 768px) {
@@ -785,6 +786,7 @@ ul {
     display: flex;
     gap: 2rem;
   }
+  
 
   .app-btn {
     padding-top: 2rem;
@@ -818,6 +820,7 @@ ul {
   .testimonal-box-icon {
     display: flex;
     flex-direction: column;
+    
 
     img {
       width: 13%;
@@ -826,12 +829,14 @@ ul {
 
   .testimonal-box-1 {
     width: 50%;
-    box-shadow: 5px 5px 5px rgba(123, 124, 123, 0.301);
+    border-radius: 0.5rem;
+    
+    background-color: rgba(128, 128, 128, 0.089)
   }
 
   .testimonal-box-2 {
     width: 50%;
-    box-shadow: 5px 5px 5px rgba(123, 124, 123, 0.301);
+     background-color: rgba(128, 128, 128, 0.089)
   }
   .person-icon {
     display: flex;
@@ -864,14 +869,13 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    
   }
 
   .card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
   }
 
   .card {
@@ -881,7 +885,6 @@ ul {
     border-radius: 1rem;
   }
 
-
   header p {
     margin-top: 0.5rem;
     justify-self: center;
@@ -890,26 +893,31 @@ ul {
   .accordion {
     padding: 1rem;
     border-radius: 8px;
-    
   }
 
   .contacts {
     display: grid;
     gap: 1rem;
-    
   }
 
   .contact {
-    
-    
     border-radius: 8px;
+
+    
   }
 
-  .contact h3 {
-    margin-top: 0;
+
+  a {
+    text-decoration: none;
   }
 
-  
+  .arrow-purple {
+    color: var(--clr-primary);
+  }
+  .arrow-green {
+    color: #22c55e;
+  }
+
   @media (max-width: 767px) {
     .contact-1,
     .contact-2 {
@@ -917,11 +925,10 @@ ul {
     }
   }
 
-  
   @media (min-width: 768px) {
     .contacts {
       grid-template-columns: repeat(2, 1fr);
-      
+
       padding-left: 5rem;
     }
 
@@ -932,23 +939,18 @@ ul {
     header {
       justify-self: center;
     }
-    
+
     .accordion {
       justify-self: center;
     }
   }
-  
+
   @media (min-width: 992px) {
     .contacts {
       padding-left: 12rem;
     }
   }
-  
 
-  
-    
-
-  
   @media (min-width: 1024px) {
     .container {
       grid-template-columns: 1fr 1fr;
@@ -962,12 +964,10 @@ ul {
         justify-self: start;
       }
     }
-    
-   
 
     .accordion {
       grid-column: 2;
-      grid-row: 1 /2 span ;
+      grid-row: 1 /2 span;
     }
 
     .contacts {
@@ -976,28 +976,17 @@ ul {
       grid-template-columns: repeat(2, 1fr);
       margin-top: -16rem;
       padding-left: 0;
-     
+      position: relative;
       
     }
-    
-
-    
-    
-    
   }
 
-
-   @media (min-width: 1400px) {
-
-
+  @media (min-width: 1400px) {
     header {
       padding-right: 10rem;
     }
-
-
-    
-   }
-}
+  }
+} 
 
 /* FAQ END */
 
