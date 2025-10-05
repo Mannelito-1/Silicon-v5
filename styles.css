@@ -848,7 +848,6 @@ ul {
 
 .faq {
   padding-block: var(--section-spacing);
-
   .collapse {
     display: none;
   }
@@ -857,195 +856,147 @@ ul {
     display: block;
   }
 
-  .contact-block {
-    display: none;
+  img {
+    width: 10%;
   }
 
-  a {
-    text-decoration: none;
-  }
-
-  .arrow-green {
-    color: #22c55e;
-    text-decoration: none;
-  }
-
-  .arrow-purple {
-    color: var(--clr-primary);
-  }
-
-  .btn-contact-arrow {
-    padding-top: 1rem;
-    white-space: nowrap;
-  }
-
-  .card {
-    background-color: var(--clr-bg-100);
-    min-width: 100%;
-    margin-bottom: 1rem;
-    border-radius: 0.5rem;
-    padding-left: 1rem;
-  }
-  .faq-heading {
-    text-align: center;
-    padding-bottom: 2rem;
-  }
-
-  .text-faq {
-    padding-top: 1.5rem;
-  }
-
-  .accordion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    
   }
 
   .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-block: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   }
 
-  .btn-contact {
-    display: flex;
+  .card {
+    margin-bottom: 1rem;
+    background-color: var(--clr-bg-100);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+
+  header p {
+    margin-top: 0.5rem;
     justify-self: center;
-    padding-top: 3rem;
-    padding: 0, 9em 10em;
   }
 
-  .card-body {
-    padding-top: 0, 5rem;
+  .accordion {
+    padding: 1rem;
+    border-radius: 8px;
+    
   }
 
-  @media (width > 768px) {
-    .faq-left {
-      display: block;
-      order: 2;
-    }
-    .faq-right {
-      order: 1;
-    }
+  .contacts {
+    display: grid;
+    gap: 1rem;
+    
+  }
 
-    .faq-left-right {
-      display: flex;
-      flex-direction: column;
-    }
+  .contact {
+    
+    
+    border-radius: 8px;
+  }
 
-    .btn-contact {
+  .contact h3 {
+    margin-top: 0;
+  }
+
+  
+  @media (max-width: 767px) {
+    .contact-1,
+    .contact-2 {
       display: none;
     }
+  }
 
-    .contact-block {
-      display: flex;
-
-      gap: 15rem;
-      padding-top: 5rem;
-      justify-content: space-around;
-
-      img {
-        width: 25%;
-      }
+  
+  @media (min-width: 768px) {
+    .contacts {
+      grid-template-columns: repeat(2, 1fr);
+      
+      padding-left: 5rem;
     }
 
+    .contact-1,
+    .contact-2 {
+      display: block;
+    }
+    header {
+      justify-self: center;
+    }
+    
     .accordion {
       justify-self: center;
     }
   }
-
-  @media (width > 993px) {
-    .contact-block {
-      justify-content: center;
+  
+  @media (min-width: 992px) {
+    .contacts {
+      padding-left: 12rem;
     }
   }
+  
 
-  @media (width >= 1024px) {
-    .faq-left {
-      order: 1;
-      display: flex;
+  
+    
+
+  
+  @media (min-width: 1024px) {
+    .container {
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
     }
 
-    .faq-right {
-      order: 2;
-    }
-
-    .faq-left-right {
-      display: flex;
-      flex-direction: row;
-      gap: 5rem;
-    }
-
-    .contact-block {
-      display: flex;
-      flex-direction: row;
-      gap: 5rem;
-      width: 100%;
-      padding-top: 13rem;
-
-      img {
-        width: 100%;
-      }
-    }
-
-    .contact-phone {
-      width: 100%;
-
-      img {
-        width: 22%;
-      }
-    }
-
-    .contact-msg {
-      width: 100%;
+    header {
+      grid-column: 1;
 
       p {
-        flex-shrink: 0;
-      }
-
-      img {
-        width: 22%;
+        justify-self: start;
       }
     }
-
-    .faq-heading {
-      width: 42%;
-      position: relative;
-      top: 12rem;
-      right: 2rem;
-    }
+    
+   
 
     .accordion {
-      margin-left: 3rem;
+      grid-column: 2;
+      grid-row: 1 /2 span ;
     }
+
+    .contacts {
+      grid-column: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: -16rem;
+      padding-left: 0;
+     
+      
+    }
+    
+
+    
+    
+    
   }
 
-  @media (width > 1200px) {
-    .contact-block {
-      padding-left: 1rem;
+
+   @media (min-width: 1400px) {
+
+
+    header {
+      padding-right: 10rem;
     }
 
-    .faq-heading {
-      right: 2.5rem;
-    }
-  }
 
-  @media (width > 1400px) {
-    .faq-heading {
-      right: 7rem;
-    }
-
-    .contact-block {
-      position: relative;
-      right: 3.5rem;
-    }
-
-    .contact-msg {
-      white-space: nowrap;
-    }
-  }
+    
+   }
 }
 
 /* FAQ END */
