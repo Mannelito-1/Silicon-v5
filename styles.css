@@ -624,7 +624,7 @@ ul {
     }
   }
 
-  @media (width > 1024px) {
+  @media (width >= 1024px) {
     .container {
       display: flex;
       gap: 3rem;
