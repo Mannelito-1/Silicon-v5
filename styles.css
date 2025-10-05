@@ -786,7 +786,6 @@ ul {
     display: flex;
     gap: 2rem;
   }
-  
 
   .app-btn {
     padding-top: 2rem;
@@ -820,7 +819,6 @@ ul {
   .testimonal-box-icon {
     display: flex;
     flex-direction: column;
-    
 
     img {
       width: 13%;
@@ -830,13 +828,13 @@ ul {
   .testimonal-box-1 {
     width: 50%;
     border-radius: 0.5rem;
-    
-    background-color: rgba(128, 128, 128, 0.089)
+
+    background-color: rgba(128, 128, 128, 0.089);
   }
 
   .testimonal-box-2 {
     width: 50%;
-     background-color: rgba(128, 128, 128, 0.089)
+    background-color: rgba(128, 128, 128, 0.089);
   }
   .person-icon {
     display: flex;
@@ -871,6 +869,11 @@ ul {
     gap: 1rem;
   }
 
+  .contact-btn {
+    justify-self: center;
+    justify-content: center;
+  }
+
   .card-header {
     display: flex;
     align-items: center;
@@ -902,10 +905,7 @@ ul {
 
   .contact {
     border-radius: 8px;
-
-    
   }
-
 
   a {
     text-decoration: none;
@@ -926,6 +926,10 @@ ul {
   }
 
   @media (min-width: 768px) {
+
+    .contact-btn {
+      display: none;
+    }
     .contacts {
       grid-template-columns: repeat(2, 1fr);
 
@@ -977,7 +981,6 @@ ul {
       margin-top: -16rem;
       padding-left: 0;
       position: relative;
-      
     }
   }
 
@@ -986,7 +989,7 @@ ul {
       padding-right: 10rem;
     }
   }
-} 
+}
 
 /* FAQ END */
 
