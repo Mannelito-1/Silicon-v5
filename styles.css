@@ -24,6 +24,7 @@
 
   --white-to-gray: #fff;
   --clr-store-btn: var(--clr-gray-900);
+  --clr-testimonial-bg: rgba(165, 164, 164, 0.041);
 
   --br-m: 0.375em;
   --br-l: 0.5em;
@@ -829,12 +830,12 @@ ul {
     width: 50%;
     border-radius: 0.5rem;
 
-    background-color: rgba(128, 128, 128, 0.089);
+    background-color: var(--clr-testimonial-bg);
   }
 
   .testimonal-box-2 {
     width: 50%;
-    background-color: rgba(128, 128, 128, 0.089);
+    background-color: var(--clr-testimonial-bg);
   }
   .person-icon {
     display: flex;
@@ -868,6 +869,7 @@ ul {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+  
 
   .contact-btn {
     justify-self: center;
@@ -978,7 +980,7 @@ ul {
       grid-column: 1;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      margin-top: -16rem;
+      margin-top: -13rem;
       padding-left: 0;
       position: relative;
     }
